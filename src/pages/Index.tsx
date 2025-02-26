@@ -4,6 +4,7 @@ import TankViewer3D from '@/components/TankViewer3D';
 import CameraView from '@/components/CameraView';
 import StatusPanel from '@/components/StatusPanel';
 import CruiseSettings from '@/components/CruiseSettings';
+import Map from '@/components/Map';
 
 const Index = () => {
   return (
@@ -34,8 +35,8 @@ const Index = () => {
         {/* Right Column - Status and Controls */}
         <div className="col-span-3 space-y-4">
           <StatusPanel />
-          <div className="bg-tank-800/50 rounded-lg p-4">
-            <div id="map" className="w-full h-[400px] bg-tank-700 rounded"></div>
+          <div className="bg-tank-800/50 rounded-lg p-4 h-[400px]">
+            <Map />
           </div>
         </div>
       </div>
